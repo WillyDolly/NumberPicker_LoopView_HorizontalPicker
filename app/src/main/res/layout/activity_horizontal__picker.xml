@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.popland.pop.numberpicker_loopview_horizontalpicker.Horizontal_Picker">
+
+    <com.wefika.horizontalpicker.HorizontalPicker
+        android:id="@+id/picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/demo_selector"
+        android:textSize="22sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="20"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:dividerSize="0dp"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TVshow"
+        android:layout_below="@+id/picker"/>
+</merge>
